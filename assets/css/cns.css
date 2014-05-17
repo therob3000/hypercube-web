@@ -1,0 +1,323 @@
+@font-face {
+    font-family: ArbuckleRemix;
+    src: url('fonts/ArbuckleRemix.ttf');
+}
+
+@font-face {
+    font-family: Acknowledge;
+    src: url('fonts/Acknowledge.ttf');
+}
+
+@font-face {
+    font-family: AlphaBeta;
+    src: url('fonts/AlphaBeta.ttf');
+}
+
+@font-face {
+    font-family: ArcadeClassic;
+    src: url('fonts/Classic.ttf');
+}
+
+@font-face {
+    font-family: DejaVuSans;
+    src: url('fonts/DejaVuSans.ttf');
+}
+
+@font-face {
+    font-family: DejaVuSansMono;
+    src: url('fonts/DejaVuSansMono.ttf');
+}
+
+@font-face {
+    font-family: DejaVuSerif;
+    src: url('fonts/DejaVuSerif.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../images/backgroundnight.png');
+    font-family: DejaVuSans, Arial, Helvetica, sans-serif;
+    background-color: rgba(21, 21, 21, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.info_debug {
+    font-family: ArcadeClassic, sans-serif; 
+    position: absolute;
+    top: 10px;
+    color: rgba(255, 255, 255, 255);
+    width: 100%;
+    text-align: center;
+}
+
+.reel {
+    width: 320px;
+    height: 320px;
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    text-align: center;
+    cursor: pointer;
+
+    font-family: DejaVuSans, Arial, Helvetica, sans-serif;
+}
+
+.reel:hover {
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+    border: 1px solid rgba(0, 255, 255, 0.75);
+}
+
+.reel .number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: rgba(0, 255, 255, 0.75);
+}
+
+.reel .symbol {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 200px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.75);
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+.reel .details {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 24px;
+    color: rgba(0, 255, 255, 0.75);
+}
+
+.logo {
+    margin-top: 95px;
+    background-color: transparent;
+    cursor: default;
+}
+
+.logo .title {
+    position: absolute;
+    font-family: AlphaBeta, sans-serif;
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.75);
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+.pip {
+    margin-top: 95px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pip:hover {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pip .number {
+    position: absolute;
+    font-family: AlphaBeta, sans-serif;
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.75);
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    /** filter: url('commonfilters.xml#drop-shadow'); */
+}
+
+.credit {
+    width: 640px;
+    height: 200px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    text-align: center;
+}
+
+.credit .inner_bet {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 160px;
+    background-color: rgba(255, 153, 0, 0.75);
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+}
+
+.credit .inner_bet .bet_opt_up {
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+.credit .inner_bet .bet_opt_down {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+
+.credit .inner_bet .bet_num {
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 40px;
+    font-weight: bold;
+
+    cursor: default;
+
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+    -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+.credit .inner_credit {
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    width: 440px;
+    height: 160px;
+    background-color: rgba(255, 153, 0, 0.75);
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+}
+
+.credit .number {
+    font-family: ArcadeClassic, sans-serif; 
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: default;
+}
+
+.winnings {
+    width: 640px;
+    height: 200px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.75);
+    text-align: center;
+}
+
+.winnings .inner_win {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 600px;
+    height: 160px;
+    background-color: rgba(255, 153, 0, 0.75);
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+}
+
+.winnings .number {
+    font-family: ArcadeClassic, sans-serif; 
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: default;
+}
+
+.info_base {
+    width: 1700px;
+    height: 1015px;
+    z-index: 3000;
+
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+}
+
+.info_base .inner {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 1650px;
+    height: 850px;
+    background-color: rgba(255, 153, 0, 0.75);
+
+    box-shadow: 0px 0px 12px rgba(255, 255, 0, 0.5);
+    border: 1px solid rgba(255, 255, 0, 0.5);
+}
+
+.info_base .inner .changeable {
+    width: 1650px;
+    height: 740px;
+    background-color: rgba(245, 153, 0, 0.75);
+}
+
+.info_base .inner .static {
+    position: absolute;
+    width: 1650px;
+    height: 110px;
+    background-color: rgba(255, 0, 0, 0.75);
+    text-align: center;
+    color: rgba(255, 255, 255, 255);
+    font-size: 28px;
+}
+
+.info_base .exit {
+    margin-top: 12px;
+    margin-left: 25px;
+    position: absolute;
+    width: 400px;
+    height: 110px;
+    background-color: rgba(255, 0, 0, 0.75);
+}
+
+.info_base .navi {
+    margin-top: 12px;
+    margin-right: 25px;
+    float: right;
+    width: 850px;
+    height: 110px;
+}
+
+.info_base .next {
+    float: right;
+    width: 400px;
+    height: 110px;
+    background-color: rgba(255, 0, 0, 0.75);
+}
+
+.info_base .prev {
+    position: absolute;
+    width: 400px;
+    height: 110px;
+    background-color: rgba(255, 0, 0, 0.75);
+}
+
+.info_base .txt {
+    margin-top: 15px;
+    font-family: ArcadeClassic, sans-serif; 
+    text-align: center;
+    color: rgba(255, 255, 255, 255);
+    font-size: 74px;
+    cursor: default;
+}
+
